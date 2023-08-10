@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang = "fr-FR">
     <head>
+
         <title> Univers cinématographique des films Batman  </title>
         <meta charset = "utf-8">
         <meta name = "author" content = "Junior Nzima">
         <meta name = "description" content = "Univers cinématographique des films Batman. Plongez dans le monde de Batman en découvrant les acteurs Batman , les alliés de Batman , les ennemis de Batman et la Justice league. ">
         <link rel = "shortcut icon" href = "Logos/J.png">   <!-- Ce logo désigne mon logo personnel qui m'a  été demandé de créer dans le module freelance. -->
+        
     </head>
 
-    <body style = "background-color : #646161 ;">       <!-- Je donne une couleur d'arrière plan au body pour que les images qui sont en blanc puisse se voir . -->
+    <body style = "background-color : #494545 ;" >  <!-- Nous avons appliqué ce style au body pour que les images de la page soient visibles. -->
 
         <!--  div_primaire est la div principale dans laquelle les background ( image et color ) sont appliqués  -->
 
@@ -16,19 +18,19 @@
             
             <!-- div_secondaire est là pour définir les lignes discrètes qui tracent les contours de la page. -->
             
-            <div id = "div_secondaire">      <!-- div_secondaire est divisé en 2 : une première div qui contient le header et une seconde div qui contient le contenu principal de la page. -->
+            <div id = "div_secondaire">     <!-- div_secondaire est divisé en 2 : une première div qui contient le header et une seconde div qui contient le contenu principal de la page. -->
     
                 <div id = "div1">
                     <header>
                         <div>
-                            <a href = "index.html">
+                            <a href = "index2.html">
                                 <img src = "Logos/logohome.png" alt = "logo home" class = "logo">
                             </a>
                         </div>
                         <nav>
                             <ul>
                                 <li>
-                                    <a href = "index.html" id = "home"> home </a>
+                                    <a href = "index2.html" id = "home"> home </a>
                                 </li>
 
                                 <li>
@@ -85,7 +87,7 @@
                     <p id = "intro">
                         Au nom de ses parents assassinés, Bruce Wayne mène une guerre éternelle contre les
                         criminels de Gotham City. Il est vengeur. Il est la nuit. <br><br>
-                        <span class = "batman_intro"> Il est <span class = "b_batman"> B</span>atman. </span>
+                        <span class = "batman_intro"> Il est Batman. </span>
                     </p>
 
                     
@@ -106,7 +108,6 @@
                         <!-- ******************************* SECTION ACTEURS BATMAN ************************--> 
 
 
-
                         <section id = "acteurs_batman">
                             <h1 id = "voir_le_heros"> batman au cinéma </h1>  
                 
@@ -117,12 +118,13 @@
                             <br><br><br>
                             
                             <div id = "image_acteurs_batman">
+                                
                                 <div>
 
                                     <div>
                                         <img src = "Illustrations/Bathome2.png" alt = "Robert Pattinson" class = "personnage_batman">
                                     </div>
-                                    
+
                                     <h2 class = "nom_personnage">  
                                         Robert Pattinson <br> 
                                         <time datetime =  "2022"> (2022) </time>
@@ -135,7 +137,7 @@
                                     <div>
                                         <img src = "Illustrations/Bathome3.png" alt = "Christian Bale" class = "personnage_batman">
                                     </div>
-                
+                                    
                                     <h2 class = "nom_personnage">
                                         Christian Bale <br> (
                                         <time datetime = "2006"> 2006 </time> - 
@@ -150,7 +152,7 @@
                                     <div>
                                         <img src = "Illustrations/Bathome4.png" alt = "Ben Affleck" class = "personnage_batman" >
                                     </div>
-                
+                                    
                                     <h2 class = "nom_personnage">
                                         Ben Affleck <br> 
                                         <time datetime = "2016"> 2016 </time> - 
@@ -317,10 +319,11 @@
                                     <img src = "Illustrations/Bathome_ba1.png" alt = "Batman">
                 
                                     <aside id = "affiche_film">
-                                        ACTION, ADVENTURE <br>
-                                        <span class = "span1"> Batman Begins </span> <br>
+                                        <h3 class = "titre_affiche_film"> ACTION, ADVENTURE </h3> 
+                                        <h4 class = "sous_titre_affiche_film"> Batman Begins </h4>
                                         <span class = "span1"> IMDB </span> : <span class = "span2"> 8.2 </span> <br>
                                         Le jeune Bruce Wayne assiste impuissant au meurtre de ses parents. Profondément traumatisé, il grandit obnubilé par un désir de vengeance. La Ligue des ombres, une secte de guerriers ninja dirigée par Ra's al Ghul, se chargera de son entraînement. De retour chez lui à Gotham, avec l'aide de son majordome Alfred Pennyworth, Bruce Wayne se lance alors dans la lutte contre le crime sous le nom de Batman.
+                                        
                                     </aside>
                                 </div>
                 
@@ -348,14 +351,14 @@
 
 
                         <section id = "formulaire">
-                            <form>
+                            <form method = "post" action = "traitement.php">
                                 <h1 class = "h1_formulaire"> PRENONS CONTACT </h1>
 
                                 <br>
                 
                                 <div>
                                     <h2 class = "sous_titre_form"> ADRESSE EMAIL </h2>
-                                    <input type = "email" id = "mail" placeholder = "Adresse email">
+                                    <input type = "email" name = "mail" id = "mail" placeholder = "Adresse email" required >
                                 </div>
 
                                 <br>
@@ -365,7 +368,7 @@
                                     <label> 
                                         En cochant cette case vous acceptez de recevoir l'actualité concernant les aventures de Batman : 
                                     </label>
-                                    <input type = "checkbox">
+                                    <input type = "checkbox" name = "checkbox" id = "checkbox">
                                 </div>
                 
                                 <br>
@@ -381,6 +384,7 @@
                                             <option value = "une fois tous les trois mois"> Une fois tous les trois mois </option>
                                             <option value = "une fois tous les six mois"> Une fois tous les six mois </option>
                                         </select>
+                                        <img src = "Logos/icon_flèche_2.png">
                                     </label>
                                     
                                 </div>
@@ -402,13 +406,13 @@
                 
                                 <div>
                                     <h2 class = "sous_titre_form"> MESSAGE </h2>
-                                    <textarea rows = "1" contenteditable = "false" placeholder = "Laissez un commentaire pour la communauté"></textarea>
+                                    <textarea rows = "1" placeholder = "Laissez un commentaire pour la communauté"></textarea>
                                 </div>
                 
                                 <br>
                 
                                 <div class = "div3_bouton">
-                                    <input type = "submit" value = "CONFIRMER" class = "bouton bouton3">
+                                    <input type = "submit" name = "submit" value = "CONFIRMER" class = "bouton bouton3">
                                 </div>
                            </form>
                         </section>
@@ -418,7 +422,7 @@
                         
                         <!-- ******************************* DERNIERE SECTION ****************************** -->
 
-                        <div id = "derniere_section">       <!-- Ici j'utilise une div plutôt qu'une section    parce que ma section n'a pas de titre. Donc pour un meilleur balisage il serait mieux ici d'utiliser une div. -->
+                        <div id = "derniere_section">       <!-- Ici j'utilise une div plutôt qu'une section parce que ma section n'a pas de titre. Donc pour un meilleur balisage il serait mieux ici d'utiliser une div. -->
 
                             <blockquote>
 
@@ -444,62 +448,62 @@
 
                             <br><br><br><br>
 
-                            <!-- ********************************** FOOTER ********************************* -->
-                    
-                            <footer>
-                                <div class = "div_small">
-                                    
-                                    <img src = "Logos/icon_WB.png" alt = "logo WB">
-                                    
-                                    <p>
-                                        Ce projet respecte l'univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves
-                                    </p>
-                                </div>
-
-                                <br>
-                    
-                                <div class = "logo_footer">
-                                    <div>
-                                        <a href = "https://sayna.io/" class = "logo"> 
-                                            <img src = "Logos/logo_sayna_white.png" alt = "logo sayna">
-                                        </a>
-                                    </div>
-                                    
-                                    <div>
-                                        <a href = "#" class = "logo">
-                                            <img src = "Logos/icon_x.png" alt = "logo x">
-                                        </a>
-                                    </div>
-                                    
-                                    <div>
-                                        <a href = "https://www.dc.com/" class = "logo">
-                                            <img src = "Logos/icon_DC.png" alt = "logo DC">
-                                        </a>
-                                    </div>
-                                    
-                                    <div>
-                                        <a href = "https://www.facebook.com/" class = "logo">
-                                            <img src = "Logos/icon_facebook.png" alt = "logo facebook">
-                                        </a>
-                                    </div>
-                                    
-                                    <div>
-                                        <a href = "https://www.instagram.com/" class = "logo">
-                                            <img src = "Logos/icon_ig.png" alt = "logo instagram">
-                                        </a>
-                                    </div>
-                                    
-                                    <div>
-                                        <a href = "https://twitter.com/?lang=fr" class = "logo">
-                                            <img src = "Logos/icon_tw.png" alt = "logo twitter">
-                                        </a>
-                                    </div>
-                                </div>
-                            </footer>
-                    
                         </div>
                 
                     </main>
+
+                    <!-- ********************************** FOOTER ********************************* -->
+                    
+                    <footer>
+                        <div class = "div_small">
+                            
+                            <img src = "Logos/icon_WB.png" alt = "logo WB">
+                        
+                            <p>
+                                Ce projet respecte l'univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves
+                            </p>
+                        </div>
+
+                        <br>
+            
+                        <div class = "logo_footer">
+                            <div>
+                                <a href = "https://sayna.io/" class = "logo"> 
+                                    <img src = "Logos/logo_sayna_white.png" alt = "logo sayna">
+                                </a>
+                            </div>
+                            
+                            <div>
+                                <a href = "#" class = "logo">
+                                    <img src = "Logos/icon_x.png" alt = "logo x">
+                                </a>
+                            </div>
+                            
+                            <div>
+                                <a href = "https://www.dc.com/" class = "logo">
+                                    <img src = "Logos/icon_DC.png" alt = "logo DC">
+                                </a>
+                            </div>
+                            
+                            <div>
+                                <a href = "https://www.facebook.com/" class = "logo">
+                                    <img src = "Logos/icon_facebook.png" alt = "logo facebook">
+                                </a>
+                            </div>
+                            
+                            <div>
+                                <a href = "https://www.instagram.com/" class = "logo">
+                                    <img src = "Logos/icon_ig.png" alt = "logo instagram">
+                                </a>
+                            </div>
+                            
+                            <div>
+                                <a href = "https://twitter.com/?lang=fr" class = "logo">
+                                    <img src = "Logos/icon_tw.png" alt = "logo twitter">
+                                </a>
+                            </div>
+                        </div>
+                    </footer>
 
 
                 </div>
