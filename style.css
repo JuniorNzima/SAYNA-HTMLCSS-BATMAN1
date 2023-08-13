@@ -1,0 +1,681 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+h1
+{
+    font-family: 'Rajdhani', sans-serif;
+    font-weight : 500 ;
+    font-size : 36px ;
+    text-transform : uppercase ;
+}
+
+h2
+{
+    font-family: 'Space Grotesk', sans-serif;
+    font-size : 22px ;
+    text-align : center ;
+    font-weight : normal ;
+}
+
+.bouton
+{
+    font-family: 'Rajdhani', sans-serif ;
+    font-weight : 500 ;
+    font-size : 20px ;
+    text-decoration : none ;
+    color : white ;
+}
+
+html
+{
+    scroll-behavior : smooth ; 
+}
+
+
+body
+{
+    margin : 0 ;
+    padding : 0 ;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size : 18px ;
+    font-weight : 300 ;
+    color : white ;
+    background-color : black ;
+    line-height : 1.5 ;
+}
+
+
+#div_primaire
+{
+    height : 130vh ;
+    background-image : url("Illustrations/Bathome1.png") ;
+    background-size : 100% 100% ;
+    background-repeat : no-repeat ;
+}
+
+/* @media screen and (max-width : 600px)
+{
+    #div_primaire
+    {
+        height : 70vh ;
+        background-image : url("Illustrations/Bathome1.png") ;
+        background-size : 100% 50% ;
+        background-repeat : no-repeat ;
+    }
+
+    #div_secondaire
+    {
+        border-left : 2px solid rgba(255,255,255,0.1) ;
+        border-right : 2px solid rgba(255,255,255,0.1)  ;                       A REVOIR
+        margin : 0 35px ;
+    }
+
+    #div1
+    {
+        border-bottom : 2px solid rgba(255,255,255,0.1) ;
+        height : 15px ;
+    }
+} */
+
+#div_secondaire
+{
+    border-left : 2px solid rgba(255,255,255,0.1) ;
+    border-right : 2px solid rgba(255,255,255,0.1)  ; 
+    margin : 0 102px ;
+}
+
+#div1
+{
+    border-bottom : 3px solid rgba(255,255,255,0.1) ;
+    height : 132px ;
+}
+
+
+/* ************************************************** HEADER *********************************************** */
+
+header
+{
+    width : 90% ;
+    margin : auto ;
+    display : flex ;
+    justify-content : space-between ;
+    align-items : center ;
+    padding-top : 20px ;
+    /* border : 1px solid orange ; */
+}
+
+nav
+{
+    width : 40% ;
+}
+
+nav > ul
+{
+    /* border : 1px solid blue ; */
+    width : 100% ;
+    display : flex ;
+    justify-content : space-between ;
+    flex-wrap : wrap ;
+}
+
+nav > ul li
+{
+    list-style-type : none ;
+    text-transform : uppercase ;
+}
+
+nav li a
+{
+    color : white ;
+    text-decoration : none ;
+    font-size : 22px ;
+    font-family: 'Rajdhani', sans-serif ;
+}
+
+/* ********************************************* INTRODUCTION ********************************************** */
+
+#intro
+{
+    /* border : 1px solid blue ; */
+    width : 43% ;
+    text-align : center ;
+    margin : 15% auto 3% auto ;
+}
+
+.batman_intro
+{
+    font-weight : bolder ;
+    font-size : 22px ;
+}
+
+#div1_bouton
+{
+    /* border : 1px solid green ; */
+    width : 50% ;
+    display : flex ;
+    justify-content : space-evenly ;
+    flex-wrap : wrap ;
+    margin-left : 24% ;
+}
+
+.bouton1
+{
+    color : white ;
+    background : linear-gradient(to right , rgba(237,222,191,0.4) , rgba(137,0,8,0.6)) ;
+    opacity : 0.4 ;
+    padding : 3% 6% ;
+    margin-left : 7% ;
+    -webkit-transition : opacity 0.5s ;
+    -moz-transition : opacity 0.5s ;
+    -o-transition : opacity 0.5s ;
+    transition : opacity 0.5s ;
+} 
+
+.bouton1:hover
+{
+    opacity : 1 ;
+}
+
+.div1_icone
+{
+    height : 300px ;
+    display : flex ;
+    flex-direction : column ;
+    justify-content : space-between ;
+    align-items: center ;
+    position : fixed ;
+    right : 3.7% ;
+}
+
+#fleche_down
+{
+    display : flex ;
+    justify-content : center ;
+    padding : 30% 0 5% 0  ;
+}
+
+
+/* ************************************** ACTEURS BATMAN ***************************************** */
+
+.nom_personnage
+{
+    font-size : 18px ;
+}
+
+#acteurs_batman
+{
+    /* border : 1px solid blue ; */
+    margin-top : 7% ;
+}
+
+#voir_le_heros , #acteurs_batman p 
+{
+    margin-left : 5% ;
+}
+
+#acteurs_batman p
+{
+    width : 70% ;
+    text-align : justify ;
+}
+
+/* #acteurs_batman p abbr
+{
+    outline :transparent ;                              A REVOIR
+} */
+
+#image_acteurs_batman
+{
+    display : flex ;
+    justify-content : space-evenly ;
+    flex-wrap : wrap ;
+}
+
+
+/* *************************************** ENNEMIS BATMAN***************************************** */
+
+#titre_ennemis_batman
+{
+    /* border : 1px solid red ; */
+    display : flex ;
+}
+
+#adversaires
+{
+    /* border : 1px solid blue ; */
+    margin-top : 15% ;
+    margin-left : 5% ;
+    /* padding-left : 10% ; */
+}
+
+#ennemis_batman p 
+{
+    margin-left : 5% ;
+    width : 70% ;
+    text-align : justify ;
+}
+
+#image_ennemis_batman
+{
+    display : flex ;
+    justify-content : space-evenly ;
+    flex-wrap : wrap ;
+}
+
+
+
+/* ******************************************** ALLIES BATMAN ************************************* */
+
+
+#titre_allies_batman
+{
+    margin-right : -102px ;
+    display : flex ;
+    justify-content : space-between ;
+}
+
+#titre_allies_batman h1
+{
+    margin-top : 20% ;
+}
+
+#titre_allies_batman h1 , #allies_batman p
+{
+    margin-left : 5% ;
+}
+
+#allies_batman p
+{
+    width : 70% ;
+    text-align : justify ;
+}
+
+#image_allies_batman
+{
+    display : flex ;
+    justify-content : space-evenly ;
+    flex-wrap : wrap ;
+}
+
+
+/* ******************************************** JUSTICE LEAGUE ********************************* */
+
+
+#justice_league h1 , #justice_league p
+{
+    width : 70% ;
+    margin : auto ;
+}
+
+#justice_league p
+{
+    text-align : justify ;
+}
+
+#image_justice_league
+{
+    margin : 0 -9% ;
+}
+
+#image_justice_league img
+{
+    width : 100% ;
+}
+
+
+/* ********************************************** MULTIMEDIA *********************************** */
+
+#multimedia h1
+{
+    margin-left : 5% ;
+}
+
+.image1_multimedia
+{
+    /* border : 1px solid red ; */
+    margin : 0 5% ;
+    display : flex ;
+    justify-content : space-between ;
+    align-items : center ;
+}
+
+#annonce_film
+{
+    /* border : 1px solid red ; */
+    width : 50% ;
+    border-radius : 10px ;
+    display : flex ;
+    justify-content : center ;
+}
+
+
+#affiche_film 
+{
+    font-family: 'Space Grotesk', sans-serif;
+    font-size : 12px ;
+    background : linear-gradient(135deg , rgba(237,222,191,0.4) , rgba(25,88,125,0.4)) ;
+    padding : 3% ;
+    border-top-right-radius : 10px ;
+    border-bottom-right-radius : 10px ;
+}
+
+#affiche_film .titre_affiche_film
+{
+    font-family: 'Space Grotesk', sans-serif;
+    font-size : 12px ;
+    font-weight : bold ;
+    letter-spacing : 0.2em ;
+    margin : 0 ;
+}
+
+#affiche_film .sous_titre_affiche_film 
+{
+    /* border : 1px solid red ; */
+    font-family: 'Rajdhani', sans-serif ;
+    font-size : 18.5px ;
+    font-weight : normal ;
+    margin : 1% 0 ;
+}
+
+#affiche_film .span1
+{
+    font-family: 'Rajdhani', sans-serif ;
+    font-size : 18.5px ;
+}
+
+#affiche_film .span2
+{
+    color : #ffff00 ;
+}
+
+.image2_multimedia 
+{
+    margin : 0 5% ;
+}
+
+.image2_multimedia img
+{
+    width : 100% ;
+    -webkit-transition : filter 0.5s ;
+    -moz-transition : filter 0.5s ;
+    -o-transition : filter 0.5s ;
+    transition : filter 1s ;
+}
+
+.image2_multimedia img:hover
+{
+    filter : blur(0) drop-shadow(0 0 30px rgba(255,255,255,0.4)) ;
+}
+
+
+/* ****************************************** FORMULAIRE ****************************************** */
+
+
+#formulaire
+{
+    background : linear-gradient(135deg , rgba(237,222,191,0.4) , rgba(25,88,125,0.4)) ;
+    margin : 0 -9% ; 
+}
+
+#formulaire form
+{
+    /* border : 1px solid red ; */
+    width : 45% ;
+    margin : auto ;
+    padding : 3% 0 5% 0 ;
+}
+
+.h1_formulaire
+{
+    text-align : center ;
+    padding-top : 5% ;
+}
+
+h2[class = "sous_titre_form"]
+{
+    text-align: start;
+}
+
+form #mail
+{
+    background-color : inherit ;
+    border : none ;
+    outline : none ;
+    border-bottom : 1px solid white ;
+    width : 100% ;
+    color : white ;
+    caret-color : white ;
+    /* margin-top : -8% ; */
+}
+
+#checkbox
+{
+    transform : scale(1.5) ;
+}
+
+form select
+{
+    border : none ;
+    outline : none ;
+    border-bottom : 1px solid white ;
+    width : 100% ;
+    color : white ;
+    opacity : 0.6 ;
+    background : linear-gradient(135deg , rgba(237,222,191,0.01) , rgba(25,88,125,0.01)) ;
+    appearance : none ;
+}
+
+.select img
+{
+    transform : rotate(90deg) scale(0.3) ;
+    margin : -6% 0 3% 92% ;
+} 
+
+form select option
+{
+    background-color : rgba(83,94,92,1) ;
+}
+
+form .recevoir_news
+{
+    border-bottom : 1px solid white ;
+    font-size : 12px ;
+    opacity : 0.6 ;
+}
+
+form textarea
+{
+    background-color : inherit ;
+    border : none ;
+    outline : none ;
+    border-bottom : 1px solid white ;
+    width : 100% ;
+    color : white ;
+    caret-color : white ;
+    margin-top : -8% ;
+    resize : none ;
+    height : 17px ;
+    /* border : 1px solid blue ;  */
+}
+
+
+::placeholder
+{
+    color : white ;
+}
+
+.div2_bouton
+{
+    /* border : 1px solid blue ; */
+    width : 60% ;
+    margin : auto ;
+    padding : 3% ;
+    display : flex ;
+    justify-content : space-between ;
+}
+
+.bouton2
+{
+    border-width : 1px ; 
+    border-style : solid ;
+    border-image : linear-gradient(69deg , #c4c4c4 , #19587d) 1 ;
+    opacity : 0.4 ;
+    padding : 2% 7% ;
+    font-size : 12px ;
+    -webkit-transition : opacity 0.5s ;
+    -moz-transition : opacity 0.5s ;
+    -o-transition : opacity 0.5s ;
+    transition : opacity 0.5s ;
+}
+
+.bouton2:hover
+{
+    opacity : 1 ;
+}
+
+.div3_bouton
+{
+    /* border : 1px solid red ; */
+    display : flex ;
+    justify-content : center ;
+}
+
+.div3_bouton .bouton3
+{
+    background : linear-gradient(to right , #eddebf , #890008) ;
+    opacity : 0.4 ;
+    padding : 3% 10% ;
+    border : none ;
+    -webkit-transition : opacity 0.5s ;
+    -moz-transition : opacity 0.5s ;
+    -o-transition : opacity 0.5s ;
+    transition : opacity 0.5s ;
+}
+
+.div3_bouton .bouton3:hover
+{
+    opacity : 1 ;
+    cursor : pointer ;
+}
+
+
+/* *************************************** DERNIERE SECTION *************************************** */
+
+#derniere_section blockquote
+{
+    /* border : 1px solid green ; */
+    display : flex ;
+    justify-content : center ;
+}
+
+.citation
+{
+    /* border : 1px solid red ; */
+    margin : 10% ;
+}
+
+.citation p
+{
+    text-align : center ;
+}
+
+.auteur_citation
+{
+    font-size : 12px ;
+    line-height: 2;
+}
+
+.guillemet_fermant
+{
+    /* border : 1px solid blue ; */
+    display : flex ;
+    flex-direction : column ;
+    justify-content : flex-end ;
+}
+
+
+/* ******************************************** FOOTER ******************************************* */
+
+footer .div_small
+{
+    display : flex ;
+    justify-content : space-evenly ;
+    align-items : center ;
+    width : 50% ;
+    margin : auto ;
+    font-size : 10px ;
+    /* border : 1px solid red ; */
+}
+
+footer .logo_footer
+{
+    /* border : 1px solid red ; */
+    width : 40% ;
+    margin : auto ;
+    padding-bottom : 10% ;
+    display : flex ;
+    justify-content : space-evenly ;
+    align-items : center ; 
+}
+
+
+/* ********************************************** ANIMATIONS CSS ********************************** */
+
+#home
+{
+    text-decoration : underline ;
+    font-weight : bold ;
+}
+
+#game:hover , #shop:hover , #compte:hover
+{
+    text-decoration : underline ;
+    font-weight : bold ;
+}
+
+.logo
+{
+    -webkit-transition : filter 1s ;
+    -moz-transition : filter 1s ;
+    -o-transition : filter 1s ;
+    transition : filter 1s ;
+}
+
+.logo:hover
+{
+    filter : invert(50%) sepia(100%) hue-rotate(18deg) saturate(4.5) brightness(228%) contrast(1);
+}
+
+.personnage_batman
+{
+    -webkit-transition : transform 0.6s ease-in-out ;
+    -moz-transition : transform 0.6s ease-in-out ;
+    -o-transition : transform 0.6s ease-in-out ;
+    transition : transform 0.6s ease-in-out ;
+}
+
+.personnage_batman:hover
+{
+    transform : scale(1.1) ;
+}
+
+*
+{
+    animation : fadein 2s ;
+}
+
+@keyframes fadein
+{
+    0%{
+        opacity : 0 ;
+        transform : translateX(-20px) ;
+    }
+
+    100%{
+        opacity : 1 ;
+    }
+}
+
+
+
+/* *************************************** MEDIAS QUERIES ************************************************* */
+
