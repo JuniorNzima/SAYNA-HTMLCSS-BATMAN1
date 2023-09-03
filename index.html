@@ -356,7 +356,7 @@
 
 
                         <section id = "formulaire">
-                            <form method = "post" action = "traitement.php">
+                            <form>
                                 <h1 class = "h1_formulaire"> PRENONS CONTACT </h1>
 
                                 <br>
@@ -417,9 +417,21 @@
                                 <br>
                 
                                 <div class = "div3_bouton">
-                                    <input type = "submit" name = "submit" value = "CONFIRMER" class = "bouton bouton3">
+                                    <a href = "#popup" class = "bouton bouton3">
+                                        <!-- <input type = "submit" name = "submit" value = "CONFIRMER" class = "bouton bouton3"> -->
+                                        CONFIRMER
+                                    </a>
                                 </div>
                            </form>
+
+                           <div id = "popup">
+                                <div class = "content">
+                                    <p> Votre message a été envoyé avec succès. </p>
+                                    <div class = "div_btn">
+                                        <a href = "#bouton_envoyer" class = "btn"> &times; </a>
+                                    </div>
+                                </div>
+                            </div>
                         </section>
 
                         <br><br><br><br>

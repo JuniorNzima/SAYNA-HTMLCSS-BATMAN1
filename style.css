@@ -681,6 +681,59 @@ footer .logo_footer
     }
 }
 
+#popup
+{
+    Background : radial-gradient(126.67% 350.28% at -21.35% 0%,#11213F 0%, #0B0B0B 39.1%, rgba(2, 23, 64, 0.837641) 94.57%,rgba(2, 23, 64, 0) 100%) ;
+    width : 40% ;
+    height : 200px ;
+    display : flex ;
+    justify-content : center ;
+    align-items: center ;
+    margin : auto ;
+    position : relative ;
+    top : -20% ;
+    visibility : hidden ;
+}
+
+.content p
+{
+    text-align : center ;
+}
+
+a{
+    text-decoration : none ;
+}
+
+.btn
+{
+    color : white ;
+    font-size : 2em ;
+    
+}
+
+.div_btn:hover
+{
+    background-color : red ;
+}
+
+.div_btn
+{
+    position : relative ;
+    bottom  : 17.5vh ;
+    left : 114.5% ;
+    height : 1.8em ;
+    width : 2em ;
+    display : flex ;
+    justify-content : center ;
+    align-items: center ;
+}
+
+#popup:target
+{
+    visibility : visible ;
+}
+
+
 
 
 /* *************************************** MEDIAS QUERIES ************************************************* */
